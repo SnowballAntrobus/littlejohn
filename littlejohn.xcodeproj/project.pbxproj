@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9B0AEE6E28B849E700317B52 /* littlejohnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AEE6D28B849E700317B52 /* littlejohnApp.swift */; };
-		9B0AEE7028B849E700317B52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0AEE6F28B849E700317B52 /* ContentView.swift */; };
 		9B0AEE7228B849EA00317B52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0AEE7128B849EA00317B52 /* Assets.xcassets */; };
 		9B0AEE7528B849EA00317B52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0AEE7428B849EA00317B52 /* Preview Assets.xcassets */; };
+		9B6D70E528C9BC4A00EB5A83 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6D70E428C9BC4A00EB5A83 /* PassKit.framework */; };
+		9B6D70E728C9BE8B00EB5A83 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D70E628C9BE8B00EB5A83 /* MainView.swift */; };
+		9B6D70EB28C9C39F00EB5A83 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D70EA28C9C39F00EB5A83 /* LocationManager.swift */; };
+		9B6D70EE28C9C9D500EB5A83 /* CardLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D70ED28C9C9D500EB5A83 /* CardLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9B0AEE6A28B849E600317B52 /* littlejohn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = littlejohn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0AEE6D28B849E700317B52 /* littlejohnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = littlejohnApp.swift; sourceTree = "<group>"; };
-		9B0AEE6F28B849E700317B52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9B0AEE7128B849EA00317B52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0AEE7428B849EA00317B52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9B6D70E228C9BC4A00EB5A83 /* littlejohn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = littlejohn.entitlements; sourceTree = "<group>"; };
+		9B6D70E428C9BC4A00EB5A83 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		9B6D70E628C9BE8B00EB5A83 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9B6D70EA28C9C39F00EB5A83 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		9B6D70ED28C9C9D500EB5A83 /* CardLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B6D70E528C9BC4A00EB5A83 /* PassKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +45,7 @@
 			children = (
 				9B0AEE6C28B849E600317B52 /* littlejohn */,
 				9B0AEE6B28B849E600317B52 /* Products */,
+				9B6D70E328C9BC4A00EB5A83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +60,10 @@
 		9B0AEE6C28B849E600317B52 /* littlejohn */ = {
 			isa = PBXGroup;
 			children = (
+				9B6D70EC28C9C99000EB5A83 /* ViewManagers */,
+				9B6D70E228C9BC4A00EB5A83 /* littlejohn.entitlements */,
 				9B0AEE6D28B849E700317B52 /* littlejohnApp.swift */,
-				9B0AEE6F28B849E700317B52 /* ContentView.swift */,
+				9B6D70E628C9BE8B00EB5A83 /* MainView.swift */,
 				9B0AEE7128B849EA00317B52 /* Assets.xcassets */,
 				9B0AEE7328B849EA00317B52 /* Preview Content */,
 			);
@@ -65,6 +76,23 @@
 				9B0AEE7428B849EA00317B52 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9B6D70E328C9BC4A00EB5A83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D70E428C9BC4A00EB5A83 /* PassKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B6D70EC28C9C99000EB5A83 /* ViewManagers */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D70EA28C9C39F00EB5A83 /* LocationManager.swift */,
+				9B6D70ED28C9C9D500EB5A83 /* CardLibrary.swift */,
+			);
+			path = ViewManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B0AEE7028B849E700317B52 /* ContentView.swift in Sources */,
 				9B0AEE6E28B849E700317B52 /* littlejohnApp.swift in Sources */,
+				9B6D70EE28C9C9D500EB5A83 /* CardLibrary.swift in Sources */,
+				9B6D70E728C9BE8B00EB5A83 /* MainView.swift in Sources */,
+				9B6D70EB28C9C39F00EB5A83 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = littlejohn/littlejohn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"littlejohn/Preview Content\"";
@@ -293,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = littlejohn/littlejohn.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"littlejohn/Preview Content\"";
